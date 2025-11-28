@@ -47,6 +47,10 @@ def slot(request):
 slot.html
 
 ```
+{% load static %}
+
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>TIMETABLE</title>
@@ -77,7 +81,7 @@ slot.html
         </style>
     </head>
     <body>
-        <img src="seclogo.png ">
+        <img src="{%static 'seclogo.png'%}">
         <table style="border-collapse: collapse;border:4px ;">
             <h1>TIMETABLE</h1>
             <tr>
